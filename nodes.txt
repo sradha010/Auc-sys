@@ -1,0 +1,11 @@
+-add package.json
+-install feew necessary packages
+-dotenv,body-parser,mongoose,express
+-create a basic node server
+-env filr creation -
+-declare port
+-call the port from env file
+-add notes file in git.ignore
+-add custom command in package.json
+-print the sysytem variable in console
+-initiate the server and opne the port
