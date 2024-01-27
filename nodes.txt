@@ -9,3 +9,10 @@
 -add custom command in package.json
 -print the sysytem variable in console
 -initiate the server and opne the port
+-create config directory
+-basic blueprint of a file(import,component ,export)
+-try catch
+-asny,await
+-import local modules
+-install cors and implemented 
+- implemented json
