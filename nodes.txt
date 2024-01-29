@@ -16,3 +16,15 @@
 -import local modules
 -install cors and implemented 
 - implemented json
+-create models directory
+ -add a single model for book
+ -add a feew datatypes in the json object-> string,datatypes-call the model in routes 
+ - call the models in routes
+ -add a new route
+  - all books route basic skeleton 
+  -basic skeleton 
+    -CRUD method 
+    -mongo finction call
+    -show in frontend correct output
+    -respond with a json and 404 error
+     -if suceesful show a dummy output on the respetive path/route    

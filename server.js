@@ -9,7 +9,9 @@ const app=express();
 //enabling cors here for safety and  for accesibility information from other details
 app.use(cors());
 //handle JSON parsing properly
-app.use(express.json())
+app.use(express.json({
+    extended:false
+}))
 // Use the API grp instead of multiple paths for multiple routes
 app.use("/api/furnitures",furnitures)
 const port=process.env.PORT || 5000
