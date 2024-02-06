@@ -11,7 +11,7 @@ const CreateFurniture = (props) => {
     <div className='CreateFurniture'>
       <div className='container'>
         <div className='row'>
-          <h1>Create a furiture</h1>
+          <h1>Create a furniture</h1>
         </div>
       </div>
     </div>

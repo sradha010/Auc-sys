@@ -3,11 +3,8 @@
 //import '../App.css';
 //import axios from 'axios';
 
-function ShowFurnitureDetails(props) {
-  const [book, setBook] = useState({});
+function ShowFurnitureDetails() {
 
-  const { id } = useParams();
- 
   return (
     <div className='ShowBookDetails'>
       <div className='container'>
@@ -17,6 +14,6 @@ function ShowFurnitureDetails(props) {
       </div>
     </div>
   );
-}
+};
 
 export default ShowFurnitureDetails;
