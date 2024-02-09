@@ -3,18 +3,18 @@
 // import axios from 'axios';
 // import '../App.css';
 
-function UpdateBookInfo(props) {
+// function UpdateFurniture() {
   
 
-  return (
-    <div className='UpdateBookInfo'>
-      <div className='container'>
-        <div className='row'>
-       <h1>Edited a furniture</h1>
-        </div>
-      </div>
-    </div>
-  );
-}
+//   return (
+//     <div className='UpdateBookInfo'>
+//       <div className='container'>
+//         <div className='row'>
+//        <h1>Edited a furniture</h1>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
-export default Update;
+// export default UpdateFurniture;

@@ -5,20 +5,20 @@
 // import { Link } from 'react-router-dom'
 // import BookCard from './BookCard'
 
-function ShowFurnitureList() {
+// function ShowFurnitureList() {
  
 
-  return (
-   <div className='ShowFurnitureList'>
-    <div className='container'>
-      <div className='row'>
-        <h1> all frnitures </h1>
-        </div>
-    </div>
-   </div>
+//   return (
+//    <div className='ShowFurnitureList'>
+//     <div className='container'>
+//       <div className='row'>
+//         <h1> all furnitures </h1>
+//         </div>
+//     </div>
+//    </div>
 
 
-  )
-}
+//   )
+// }
 
-export default ShowFurnitureList;
+// export default ShowFurnitureList;

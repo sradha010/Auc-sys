@@ -3,17 +3,17 @@
 //import '../App.css';
 //import axios from 'axios';
 
-function ShowFurnitureDetails() {
+// function ShowFurnitureDetails() {
 
-  return (
-    <div className='ShowBookDetails'>
-      <div className='container'>
-        <div className='row'>
-          <h1>showing all the funrniture list</h1>
-        </div>
-      </div>
-    </div>
-  );
-};
+//   return (
+//     <div className='ShowFurnitureDetails'>
+//       <div className='container'>
+//         <div className='row'>
+//           <h1>showing all the funrniture list</h1>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
-export default ShowFurnitureDetails;
+// export default ShowFurnitureDetails;
