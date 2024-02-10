@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
+import Footer from './Footer';
+
 
 const CreateFurniture = (props) => {
   const onSubmit =(e) =>{
@@ -22,6 +25,7 @@ e.preventDefault();
   }
   return (
     <div className='CreateFurniture'>
+      <Navbar />
       <div className='container'>
         <div className='row'>
 
@@ -52,6 +56,7 @@ e.preventDefault();
 
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
