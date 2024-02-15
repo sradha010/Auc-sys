@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { Slide, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -11,16 +13,15 @@ const CreateFurniture = (props) => {
 
   const navigate = useNavigate();
   const [furniture, setFurniture] = useState({
-    Product: '',
-    Price: '',
-    Color: '',
-    Material: '',
-    Brand: '',
-    Description: ''
+    product: '',
+    color: '',
+    material: '',
+    brand: '',
+    description: ''
   });
   const [showToast, setShowToast] = useState(false);
   const onChange = (e) => {
-    setBook({ ...furniture, [e.target.name]: e.target.value });
+    setFurniture({ ...furniture, [e.target.name]: e.target.value });
   };
 
   const onSubmit = (e) => {
@@ -30,11 +31,11 @@ const CreateFurniture = (props) => {
     //API calls with the help of axios
     axios.post("api/furnitures", furniture).then((res) => {
       setFurniture({
-        Product: "",
-        Color: "",
-        Material: "",
-        Brand: "",
-        Description: ""
+        product: "",
+        color: "",
+        material: "",
+        brand: "",
+        description: ""
       })
 
       //Show the success alert
@@ -80,6 +81,17 @@ const CreateFurniture = (props) => {
   return (
     <div className='CreateFurniture'>
       <Navbar />
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        closeOnClick={true}
+        pauseOnHover={true}
+        draggable={true} np
+        progress={undefined}
+        theme="dark"
+        transition={Slide}
+      />
       <div className='container'>
         <div className='row'>
 
@@ -92,16 +104,16 @@ const CreateFurniture = (props) => {
 
           <div className='col-md-8 m-auto'>
             <h1 className='display-4 text-center'>Add Furniture</h1>
-            <p className='lead text-center'>Create new book</p>
+            <p className='lead text-center'>Create new Furniture</p>
             <form noValidate onSubmit={onSubmit}>
 
               <div className='form-group'>
                 <input
                   type='text'
                   placeholder=' ENTER FURNITURE NAME'
-                  name='Product'
+                  name='product'
                   className='form-control'
-                  value={furniture.Product}
+                  value={furniture.product}
                   onChange={onChange}
                 />
               </div>
@@ -110,9 +122,9 @@ const CreateFurniture = (props) => {
                 <input
                   type='text'
                   placeholder=' COLOR NAME'
-                  name='Color'
+                  name='color'
                   className='form-control'
-                  value={furniture.Color}
+                  value={furniture.color}
                   onChange={onChange}
                 />
               </div>
@@ -121,9 +133,9 @@ const CreateFurniture = (props) => {
                 <input
                   type='text'
                   placeholder=' ENTER MATERIAL TYPE'
-                  name='Material'
+                  name='material'
                   className='form-control'
-                  value={furniture.Material}
+                  value={furniture.material}
                   onChange={onChange}
                 />
               </div>
@@ -132,9 +144,9 @@ const CreateFurniture = (props) => {
                 <input
                   type='text'
                   placeholder=' ENTER BRAND NAME'
-                  name='Brand'
+                  name='brand'
                   className='form-control'
-                  value={furniture.Brand}
+                  value={furniture.brand}
                   onChange={onChange}
                 />
               </div>
@@ -143,12 +155,17 @@ const CreateFurniture = (props) => {
                 <input
                   type='text'
                   placeholder=' ENTER DESCRIPTION'
-                  name='Description'
+                  name='description'
                   className='form-control'
-                  value={furniture.Description}
+                  value={furniture.description}
                   onChange={onChange}
                 />
               </div>
+
+              <input
+                type='submit'
+                className='btn btn-outline-warning btn-block mt-4'
+              />
             </form>
           </div>
         </div>
