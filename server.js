@@ -2,9 +2,10 @@ const  express=require("express");
 const connectDB= require("./config/db");
 const cors=require("cors");
 const furnitures=require("./routes/api/furnitures");
-const path = require('path')
+const path = require('path');
+require('dotenv').config({path:"./.env"})
 //connecting to mongodb
-//connectDB();
+connectDB();
 
 //Initiating the app
 const app=express();
