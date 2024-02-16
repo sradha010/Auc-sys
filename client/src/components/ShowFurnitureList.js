@@ -22,7 +22,7 @@ function ShowFurnitureList() {
   }, []);
 
   const furnitureList =
-    books.length === 0
+    furnitures.length === 0
       ? 'there is no book record!'
       : furnitures.map((furniture, k) => <FurnitureCard furniture={furniture} key={k} />);
 
@@ -52,10 +52,11 @@ function ShowFurnitureList() {
 
         <div className='list'>{furnitureList}</div>
       </div>
+      <br />
 
       <Footer />
     </div>
   );
 }
 
-export default ShowFrunitureList;
+export default ShowFurnitureList;

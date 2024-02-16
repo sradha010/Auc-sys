@@ -4,9 +4,9 @@ import './App.css';
 
 
 import CreateFurniture from './components/CreateFurniture'
-// import ShowFurnitureList from './components/ShowFurnitureList'
-// import ShowFurnitureDetails from './components/ShowFurnitureDetails'
-// import UpdateFurniture from './components/UpdateFurniture'
+import ShowFurnitureList from './components/ShowFurnitureList'
+import ShowFurnitureDetails from './components/ShowFurnitureDetails'
+ import UpdateFurniture from './components/UpdateFurniture'
 
 function App () {
   return (
@@ -14,10 +14,10 @@ function App () {
       <div>
           <Routes>
            {/*</Route exact path='/' element={<FurnitureCard />} />*/}
-            {/*<Route path='/furniture-list' element={<ShowFurnitureList />} />*/}
+            <Route path='/furniture-list' element={<ShowFurnitureList />} />
             <Route path='/create-furniture' element={<CreateFurniture />} />
-            {/*<Route path='/edit-furniture' element={<UpdateFurniture />} />*/}
-            {/*<Route path='/show-furniture/:id' element={<ShowFurnitureDetails />} />*/}
+            <Route path='/edit-furniture/:id' element={<UpdateFurniture />} />
+            <Route path='/show-furniture/:id' element={<ShowFurnitureDetails />} />
          </Routes>
       </div>
     </Router>
