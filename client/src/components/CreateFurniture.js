@@ -17,9 +17,10 @@ const CreateFurniture = (props) => {
     color: '',
     material: '',
     brand: '',
-    description: ''
+    description: '',
+    price: '',
   });
-  const [showToast, setShowToast] = useState(false);
+  const [ShowToast, setShowToast] = useState(false);
   const onChange = (e) => {
     setFurniture({ ...furniture, [e.target.name]: e.target.value });
   };
@@ -35,7 +36,8 @@ const CreateFurniture = (props) => {
         color: "",
         material: "",
         brand: "",
-        description: ""
+        description: "",
+        price:""
       })
 
       //Show the success alert
@@ -97,7 +99,7 @@ const CreateFurniture = (props) => {
 
           <div className='col-md-8 m-auto'>
             <br />
-            <Link to='/' className='btn btn-outline-warning float-left'>
+            <Link to='/' className='btn btn-outline-dark float-left'>
               Furniture List
             </Link>
           </div>
@@ -162,9 +164,20 @@ const CreateFurniture = (props) => {
                 />
               </div>
 
+              <div className='form-group'>
+                <input
+                  type='text'
+                  placeholder=' ENTER PRICE'
+                  name='price'
+                  className='form-control'
+                  value={furniture.price}
+                  onChange={onChange}
+                />
+              </div>
+
               <input
                 type='submit'
-                className='btn btn-outline-warning btn-block mt-4'
+                className='btn btn-outline-dark btn-block mt-4'
               />
             </form>
           </div>

@@ -7,13 +7,14 @@ import CreateFurniture from './components/CreateFurniture'
 import ShowFurnitureList from './components/ShowFurnitureList'
 import ShowFurnitureDetails from './components/ShowFurnitureDetails'
  import UpdateFurniture from './components/UpdateFurniture'
+ import Home from './components/HomePage'
 
 function App () {
   return (
     <Router>
       <div>
           <Routes>
-           {/*</Route exact path='/' element={<FurnitureCard />} />*/}
+            <Route exact path='/' element={<Home />} />
             <Route path='/furniture-list' element={<ShowFurnitureList />} />
             <Route path='/create-furniture' element={<CreateFurniture />} />
             <Route path='/edit-furniture/:id' element={<UpdateFurniture />} />

@@ -23,7 +23,7 @@ function ShowFurnitureList() {
 
   const furnitureList =
     furnitures.length === 0
-      ? 'there is no book record!'
+      ? 'there is no furniture record!'
       : furnitures.map((furniture, k) => <FurnitureCard furniture={furniture} key={k} />);
 
   return (
@@ -40,7 +40,7 @@ function ShowFurnitureList() {
           <div className='col-md-11'>
             <Link
               to='/create-furniture'
-              className='btn btn-outline-warning float-right'
+              className='btn btn-outline-dark float-right'
             >
               + Add New Furniture
             </Link>

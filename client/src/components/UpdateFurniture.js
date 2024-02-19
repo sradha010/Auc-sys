@@ -11,7 +11,8 @@ function UpdateFurniture(props) {
     color: "",
     material: "",
     brand: "",
-    description: ""
+    description: "",
+    price: "",
   });
 
   const { id } = useParams();
@@ -27,7 +28,8 @@ function UpdateFurniture(props) {
           material: res.data.material,
           brand:res.data.brand,
           description: res.data.description,
-        });
+          price:res.data.price,
+        }); 
       })
       .catch((err) => {
         console.log('Error from UpdateBookInfo GET request');
@@ -48,6 +50,7 @@ function UpdateFurniture(props) {
         material: furniture.material,
         brand:furniture.brand,
         description: furniture.description,
+        price:furniture.price,
     };
 
     axios
@@ -144,10 +147,22 @@ function UpdateFurniture(props) {
                 onChange={onChange}
               />
             </div>
+
+            <div className='form-group'>
+              <label htmlFor='price'>Price</label>
+              <input
+                type='number'
+                placeholder='Price'
+                name='price'
+                className='form-control'
+                value={furniture.price}
+                onChange={onChange}
+              />
+            </div>
             
             <button
               type='submit'
-              className='btn btn-outline-info btn-lg btn-block'
+              className='btn btn-outline-dark btn-lg btn-block'
             >
               Update Furniture
             </button>

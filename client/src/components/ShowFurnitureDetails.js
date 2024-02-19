@@ -117,6 +117,10 @@ function ShowFurnitureDetails(props) {
                       <th scope='row'>Description</th>
                       <td>{furniture.description}</td>
                     </tr>
+                    <tr>
+                      <th scope='row'>Price</th>
+                      <td>{furniture.price}</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
