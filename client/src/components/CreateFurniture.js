@@ -56,7 +56,7 @@ const CreateFurniture = (props) => {
       // Delay the navigation slightly to allow the toast to be seen
       setTimeout(() => {
         setShowToast(false); // Hide the toast
-        navigate('/'); // Navigate to homepage
+        navigate('/furniture-list'); // Navigate to homepage
       }, 5000); // Adjust the timeout as needed
 
     })
@@ -83,6 +83,8 @@ const CreateFurniture = (props) => {
   return (
     <div className='CreateFurniture'>
       <Navbar />
+      <br></br>
+      <br></br>
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -99,7 +101,7 @@ const CreateFurniture = (props) => {
 
           <div className='col-md-8 m-auto'>
             <br />
-            <Link to='/' className='btn btn-outline-dark float-left'>
+            <Link to='/furniture-list' className='btn btn-outline-dark float-left'>
               Furniture List
             </Link>
           </div>
@@ -177,7 +179,7 @@ const CreateFurniture = (props) => {
 
               <input
                 type='submit'
-                className='btn btn-outline-dark btn-block mt-4'
+                className='btn btn-outline-dark btn-block mt-4 justify-content-center'
               />
             </form>
           </div>

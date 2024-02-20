@@ -10,7 +10,7 @@ const FurnitureCard = (props) => {
   return (
     <div className='card-container'>
       <img
-        src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxJO8QPP2i7Y4LM6YR0zhauSi58K5SyXhKkg&usqp=CAU'
+        src='https://img.freepik.com/free-photo/blue-armchair-against-blue-wall-living-room-interior-elegant-interior-design-with-copy-space-ai-generative_123827-23719.jpg'
         alt='Furnitures'
         height={200}
       />

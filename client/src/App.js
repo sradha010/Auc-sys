@@ -8,6 +8,8 @@ import ShowFurnitureList from './components/ShowFurnitureList'
 import ShowFurnitureDetails from './components/ShowFurnitureDetails'
  import UpdateFurniture from './components/UpdateFurniture'
  import Home from './components/HomePage'
+ import AllRoutes from './components/Routes'
+ import Feature from './components/Feature'
 
 function App () {
   return (
@@ -19,6 +21,8 @@ function App () {
             <Route path='/create-furniture' element={<CreateFurniture />} />
             <Route path='/edit-furniture/:id' element={<UpdateFurniture />} />
             <Route path='/show-furniture/:id' element={<ShowFurnitureDetails />} />
+            <Route path='/features' element={<Feature />} />
+            <Route path='/routes' element={<AllRoutes />} />
          </Routes>
       </div>
     </Router>

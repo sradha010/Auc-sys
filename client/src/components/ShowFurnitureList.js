@@ -29,7 +29,8 @@ function ShowFurnitureList() {
   return (
     <div className='ShowFurnitureList'>
       <Navbar />
-
+<br></br>
+<br></br>
       <div className='container'>
         <div className='row'>
           <div className='col-md-12'>

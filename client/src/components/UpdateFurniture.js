@@ -67,12 +67,14 @@ function UpdateFurniture(props) {
   return (
     <div className='UpdateFurniture'>
       <Navbar />
-      
+      <br>
+      </br>
+      <br></br>
       <div className='container'>
         <div className='row'>
           <div className='col-md-8 m-auto'>
             <br />
-            <Link to='/' className='btn btn-outline-warning float-left'>
+            <Link to='/' className='btn btn-outline-secondary float-left'>
               Show Furniture List
             </Link>
           </div>
@@ -125,7 +127,7 @@ function UpdateFurniture(props) {
 
             <div className='form-group'>
               <label htmlFor='brand'>Brand</label>
-              <textarea
+              <input
                 type='text'
                 placeholder='Brand Name'
                 name='brand'
@@ -138,7 +140,7 @@ function UpdateFurniture(props) {
 
             <div className='form-group'>
               <label htmlFor='description'>Description</label>
-              <input
+              <textarea
                 type='text'
                 placeholder='Description'
                 name='description'
@@ -159,13 +161,15 @@ function UpdateFurniture(props) {
                 onChange={onChange}
               />
             </div>
-            
+            <br></br>
+            <div className='text-center'>
             <button
               type='submit'
-              className='btn btn-outline-dark btn-lg btn-block'
+              className='btn btn-outline-dark btn-block'
             >
               Update Furniture
             </button>
+            </div>
             <br /> <br />
           </form>
         </div>

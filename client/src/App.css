@@ -149,30 +149,35 @@
 
 
 .CreateFurniture {
-  background-color:#598392;
   min-height: 100vh;
-  color: beige;
+  color: rgb(91, 136, 147);
 }
 
 .ShowFurnitureDetails {
-  background-color: #1a4353;
   min-height: 100vh;
   color: rgb(130, 165, 190);
 }
 
 .UpdateFurniture {
-  background-color: #aec3b0;
   min-height: 100vh;
   color: #124559;
 }
 
 .ShowFurnitureList {
-  background-color:#727a7d;
   height: 100%;
   width: 100%;
   min-height: 100vh;
   min-width: 100px;
   color:#403f3c;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 .list {
@@ -190,11 +195,19 @@
   margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
-  color:#aec3b0
+  color:#292424dd
 }
 .form-control{
-  margin: 1%;
+  margin: 0.5%;
   padding: 1%;
+  border-width: 2px;
+  border-bottom: #000100;
+}
+
+.form-control:hover{
+  background-color: #1245596e;
+  color:white;
+
 }
 
 
@@ -230,4 +243,17 @@
 .btn-warning {
   background-color: #ffcab1;
   color: #fd5f15;
+}
+
+.nav{
+  background-color: #eef5f7;
+  color:#2c4149;
+  position:absolute;
+  z-index:1;
+  width: 100%;
+}
+ 
+.hbtn{
+  margin-right: 20%;
+  margin-top:13%;
 }
