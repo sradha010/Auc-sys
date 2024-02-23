@@ -21,12 +21,24 @@ const Navbar =() => (
               <i class="fas fa-route"></i> Routes 
             </a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://docs.google.com/document/d/e/2PACX-1vR4iPDOzY5dqddBAR5EFjGFQthOsw88K2HspngmsTHqd2fZN09J94kjMLIwIpuTa_D6KB-uzaVCBFpj/pub" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-file"></i> Document 
+            </a>
+          </li>
       </ul>
       <li class="nav-item">
             <a className="nav-link nav-link-end" href="https://github.com/sradha010/auc-sys" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github"></i>
               </a></li>
-    
+       
+              <li class="nav-item">
+            <a class="nav-link" href="/Technology">
+            <i class="fas fa-microchip"></i> Tech
+            </a>
+          </li>
+
     </div>
   </div>
 </nav>

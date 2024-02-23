@@ -10,6 +10,7 @@ import ShowFurnitureDetails from './components/ShowFurnitureDetails'
  import Home from './components/HomePage'
  import AllRoutes from './components/Routes'
  import Feature from './components/Feature'
+ import Tech from './components/Technology'
 
 function App () {
   return (
@@ -23,6 +24,7 @@ function App () {
             <Route path='/show-furniture/:id' element={<ShowFurnitureDetails />} />
             <Route path='/features' element={<Feature />} />
             <Route path='/routes' element={<AllRoutes />} />
+            <Route path='/technology' element={<Tech />} />
          </Routes>
       </div>
     </Router>
